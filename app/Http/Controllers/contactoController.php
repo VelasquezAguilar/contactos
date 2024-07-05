@@ -8,8 +8,8 @@ use App\Models\Contacto;
 class contactoController extends Controller
 {
     
-    public function listarContacto(){
-       
+    public function listarContacto($id){
+         $contacto= contacto::find($id);
         return view('agregarcontacto');
     }
     //

@@ -37,13 +37,13 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div class="mt-8 bg-white blue:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="card">
                             <h3 class="card-header">Lista de contactos</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <label for="">C&oacute;digo</label>
+                                    <label for="">Codigo</label>
                                     <input type="text" class="form-control" readonly>
                                     <label for="">Nombre</label>
                                     <input type="text" class="form-control" readonly>
@@ -64,11 +64,12 @@
                                             <th scope="col">Eliminar</th>
                                         </thead>
                                         <tbody>
+                                            @foreach ($contactos as $contacto)
                                                 <tr>
-                                                    <td>1</td>                                                    
-                                                    <td>Julio</td>
-                                                    <td>Cortez</td>
-                                                    <td>9999</td>                                                    
+                                                    <td>{{$contacto->id}}</td>                                                    
+                                                    <td>{{$contacto->nombre}}</td>
+                                                    <td>{{$contacto->apellido}}</td>
+                                                    <td>{{$contacto->telefono}}</td>                                                    
                                                     <td>
                                                         <a href="#" class="btn btn-danger">Eliminar</a>
                                                     </td>

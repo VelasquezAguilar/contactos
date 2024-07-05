@@ -56,7 +56,7 @@
                                         <input type="text" name="correo" class="form-control">
                                         
                                         
-                                        <button class="btn btn-primary">Guardar</button>
+                                        <a class="btn btn-primary" href= "">Guardar</a>
                                         <a href="{{route('mostrar.directorio')}}" class="btn btn-info">Regresar</a>
                                         
                                     </form>

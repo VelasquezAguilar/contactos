@@ -24,7 +24,7 @@ Route::get('/directorio',
      Route::get('/directorio/buscarEntrada',
                   [directorioController::class, 'buscarEntrada'])->name('entrada.buscar');
 
-    Route::get('/directorio/verEntrada',
+    Route::get('/directorio/verEntrada/{id}',
                  [directorioController::class, 'verEntrada'])->name('entrada.ver');
 
                  Route::get('/directorio/verEntrada/listaContacto',
