@@ -54,7 +54,7 @@
                                         <input type="text" name="telefono" class="form-control">
                                         
                                         <button class="btn btn-primary">Guardar</button>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <a href="{{route('entrada.ver')}}" class="btn btn-info">Regresar</a>
                                         
                                     </form>
                                 </p>

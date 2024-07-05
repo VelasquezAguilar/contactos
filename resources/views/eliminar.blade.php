@@ -44,7 +44,7 @@
         </div>
         <div class="modal-footer">
           <a href="#" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</a>          
-          <a href="#" class="btn btn-danger" data-bs-dismiss="modal">Confirmar</a>          
+          <a href="{{route('mostrar.directorio')}}" class="btn btn-danger" data-bs-dismiss="modal">Confirmar</a>          
         </div>
       </div>
     </div>
